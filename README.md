@@ -2,8 +2,6 @@
 
 > A single column frontend for both Pleroma and GS servers.
 
-![screenshot](https://i.imgur.com/DJVqSJ0.png)
-
 # For Translators
 
 To translate Pleroma-FE, add your language to [src/i18n/messages.js](https://git.pleroma.social/pleroma/pleroma-fe/blob/develop/src/i18n/messages.js). Pleroma-FE will set your language by your browser locale, but you can temporarily force it in the code by changing the locale in main.js.
