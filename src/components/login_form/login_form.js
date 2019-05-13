@@ -4,11 +4,11 @@ const LoginForm = {
     user: {},
     authError: false
   }),
-  computed: {
-    loginMethod () { return this.$store.state.instance.loginMethod },
-    loggingIn () { return this.$store.state.users.loggingIn },
-    registrationOpen () { return this.$store.state.instance.registrationOpen }
-  },
+  // computed: {
+  //   loginMethod () { return this.$store.state.instance.loginMethod },
+  //   loggingIn () { return this.$store.state.users.loggingIn },
+  //   registrationOpen () { return this.$store.state.instance.registrationOpen }
+  // },
   methods: {
     oAuthLogin () {
       oauthApi.login({
@@ -27,7 +27,7 @@ const LoginForm = {
         oauthApi.getTokenWithCredentials(
           {
             app,
-            instance: data.instance,
+            // instance: data.instance,
             username: this.user.username,
             password: this.user.password
           }
@@ -37,9 +37,9 @@ const LoginForm = {
             this.user.password = ''
             return
           }
-          this.$store.commit('setToken', result.access_token)
+          // this.$store.commit('setToken', result.access_token)
           this.$store.dispatch('loginUser', result.access_token)
-          this.$router.push({name: 'friends'})
+          // this.$router.push({name: 'friends'})
         })
       })
     },
