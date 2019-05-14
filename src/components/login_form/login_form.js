@@ -4,11 +4,11 @@ const LoginForm = {
     user: {},
     authError: false
   }),
-  // computed: {
-  //   loginMethod () { return this.$store.state.instance.loginMethod },
-  //   loggingIn () { return this.$store.state.users.loggingIn },
-  //   registrationOpen () { return this.$store.state.instance.registrationOpen }
-  // },
+  computed: {
+    loginMethod () { return this.$store.state.instance.loginMethod },
+    loggingIn () { return this.$store.state.users.loggingIn },
+    registrationOpen () { return this.$store.state.instance.registrationOpen }
+  },
   methods: {
     oAuthLogin () {
       oauthApi.login({

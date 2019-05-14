@@ -22,10 +22,10 @@
   height: 200px;
   width: 100%;
   // display: flex;
-  // flex-direction: row;
-  // flex-wrap: nowrap;
-  // align-content: stretch;
-  // flex-grow: 1;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  flex-grow: 1;
   // margin-top: 0.5em;
   // margin-bottom: 0.25em;
 

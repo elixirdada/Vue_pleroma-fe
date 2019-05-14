@@ -10,7 +10,7 @@
           <label for='username'>{{$t('login.username')}}</label>
           <input :disabled="loggingIn" v-model='user.username' class='form-control' id='username' v-bind:placeholder="$t('login.placeholder')">
         </div>
-        <!-- <div class='form-group'>
+        <div class='form-group'>
           <label for='password'>{{$t('login.password')}}</label>
           <input :disabled="loggingIn" v-model='user.password' class='form-control' id='password' type='password'>
         </div>
@@ -19,7 +19,7 @@
             <div><router-link :to="{name: 'registration'}" v-if='registrationOpen' class='register'>{{$t('login.register')}}</router-link></div>
             <button :disabled="loggingIn" type='submit' class='btn btn-default'>{{$t('login.login')}}</button>
           </div>
-        </div> -->
+        </div>
       </form>
 
       <form v-if="loginMethod == 'token'" v-on:submit.prevent='oAuthLogin'  class="login-form">

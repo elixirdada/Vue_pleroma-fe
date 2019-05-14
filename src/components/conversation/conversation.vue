@@ -1,7 +1,7 @@
 <template>
   <div class="timeline panel panel-default">
     <div class="panel-heading conversation-heading">
-      <span class="title"> {{ $t('timeline.conversation') }} </span>
+      <!-- <span class="title"> {{ $t('timeline.conversation') }} </span> -->
       <span v-if="collapsable">
         <a href="#" @click.prevent="$emit('toggleExpanded')">{{ $t('timeline.collapse') }}</a>
       </span>
